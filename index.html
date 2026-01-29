@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN-API Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GREEN API Test Page</h1>
+            <p class="copyright">GREEN API © 2025</p>
+            <div class="demo-mode">
+                <label>
+                    <input type="checkbox" id="demoMode">
+                    <span>Demo режим (без реальных запросов)</span>
+                </label>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="left-panel">
+                <div class="form-group">
+                    <label for="idInstance">idInstance</label>
+                    <input type="text" id="idInstance" placeholder="Введите idInstance">
+                </div>
+
+                <div class="form-group">
+                    <label for="apiTokenInstance">ApiTokenInstance</label>
+                    <input type="text" id="apiTokenInstance" placeholder="Введите ApiTokenInstance">
+                </div>
+
+                <div class="buttons-group">
+                    <button id="getSettingsBtn">getSettings</button>
+                    <button id="getStateInstanceBtn">getStateInstance</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Номер телефона</label>
+                    <input type="text" id="phoneNumber" placeholder="77777777777">
+                </div>
+
+                <div class="form-group">
+                    <label for="messageText">Текст сообщения</label>
+                    <textarea id="messageText" placeholder="Hello World!"></textarea>
+                </div>
+
+                <button id="sendMessageBtn">sendMessage</button>
+
+                <div class="form-group">
+                    <label for="fileUrl">URL файла</label>
+                    <input type="text" id="fileUrl" placeholder="https://my-site.com/img/horse.png">
+                </div>
+
+                <div class="form-group">
+                    <label for="fileName">Имя файла</label>
+                    <input type="text" id="fileName" placeholder="horse.png">
+                </div>
+
+                <button id="sendFileByUrlBtn">sendFileByUrl</button>
+            </div>
+
+            <div class="right-panel">
+                <h3>Ответ:</h3>
+                <pre id="response">{"message": "GREEN API © 2025"}</pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
